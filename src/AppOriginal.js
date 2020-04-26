@@ -44,8 +44,13 @@ class App extends Component {
   };
 
   render() {
+    // creates new array based on keys of the features prop
+    //featureHash used for the key of each instance in fieldset, the
+    // array of features
     const features = Object.keys(this.props.features).map((feature, idx) => {
       const featureHash = feature + "-" + idx;
+      //options maps through new features array,created above and creates
+      // an input based on each feature option
       const options = this.props.features[feature].map((item) => {
         const itemHash = slugify(JSON.stringify(item));
         return (

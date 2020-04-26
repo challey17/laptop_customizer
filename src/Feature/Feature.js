@@ -5,7 +5,7 @@ import FeatureOption from "../FeatureOption/FeatureOption";
 
 class Feature extends Component {
   render() {
-    //   Map over options, call FeatureOption passing key, state and callback props
+    //   Map through featureARR
 
     const options = this.props.featureArr.map((item, idx) => {
       const itemHash = slugify(JSON.stringify(item));

@@ -4,16 +4,8 @@ import Cart from "./Cart/Cart";
 
 // Normalizes string as a slug - a string that is safe to use
 // in both URLs and html attributes
-import slugify from "slugify";
 
 import "./App.css";
-
-// This object will allow us to
-// easily convert numbers into US dollar values
-const USCurrencyFormat = new Intl.NumberFormat("en-US", {
-  style: "currency",
-  currency: "USD",
-});
 
 class App extends Component {
   state = {
@@ -77,7 +69,7 @@ class App extends Component {
     //     </fieldset>
     //   );
     // });
-
+    ///////CART Componenent
     // const summary = Object.keys(this.state.selected).map((feature, idx) => {
     //   const featureHash = feature + "-" + idx;
     //   const selectedOption = this.state.selected[feature];

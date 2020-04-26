@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-import FeaturesList from "./FeaturesList/FeaturesList";
-import Cart from "./Cart/Cart";
 
 // Normalizes string as a slug - a string that is safe to use
 // in both URLs and html attributes
@@ -36,7 +34,7 @@ class App extends Component {
       },
     },
   };
-  // stays in app, event handler for subcomponents
+
   updateFeature = (feature, newValue) => {
     const selected = Object.assign({}, this.state.selected);
     selected[feature] = newValue;
@@ -103,8 +101,10 @@ class App extends Component {
           <h1>ELF Computing | Laptops</h1>
         </header>
         <main>
-          <FeaturesList features={features} />
-          {/* Replace with Cart component */}
+          <form className="main__form">
+            <h2>Customize your laptop</h2>
+            {features}
+          </form>
           <section className="main__summary">
             <h2>Your cart</h2>
             {summary}

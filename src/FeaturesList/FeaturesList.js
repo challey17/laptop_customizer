@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-class Features extends Component {
+class FeaturesList extends Component {
   render() {
     return (
       <form className="main__form">
@@ -11,4 +11,4 @@ class Features extends Component {
   }
 }
 
-export default Features;
+export default FeaturesList;
